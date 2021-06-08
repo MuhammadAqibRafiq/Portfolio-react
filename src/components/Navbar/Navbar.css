@@ -1,0 +1,118 @@
+#navbar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(
+      to right,
+      #d7e0f3,
+      #dad9c4,
+      #f5d6c6
+    ); 
+  
+    color: #050404;
+  }
+  .navbar-brand {
+    justify-self: flex-start;
+    margin-left: 0.5rem;
+  }
+  .navbar-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar-end a {
+    color: rgb(12, 10, 10);
+    padding: 0.8rem;
+    margin: 0 0.25rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: all;
+    transition-duration: 0.5s;
+  }
+  .navbar-end a:hover {
+    background: #8db5f5;
+    border-radius: 2px;
+  }
+span{
+  color: rgb(2, 2, 3);
+}
+
+  
+  @media only screen and (max-width: 680px) {
+    .navbar-end a {
+      font-size: 0.79rem;
+    }
+  }
+  @media only screen and (max-width: 570px) {
+    .navbar-end a {
+       /* opacity: 0;
+       visibility: hidden;  */
+        font-size: 0.8rem; 
+    }
+    .navbar-item{
+      font-size: 0.8rem;
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    .navbar-end a {
+       font-size: 0.7rem; 
+   }
+   .navbar-item{
+     font-size: 0.7rem;
+   }
+  }
+  @media only screen and (max-width: 445px) {
+    .navbar-menu{
+      position: relative;
+      right: 50px;
+    }
+    .navbar-end a {
+      font-size: 0.6rem;    
+  }
+  .navbar-brand{
+    opacity: 0;
+    visibility: hidden;
+  }
+  }
+  @media only screen and (max-width: 418px) {
+    .navbar-menu{
+      position: relative;
+      right: 50px;
+    }
+    .navbar-end a {
+      font-size: 0.5rem;    
+  }
+  .navbar-brand{
+    opacity: 0;
+    visibility: hidden;
+  }
+  }
+  @media only screen and (max-width: 390px) {
+    .navbar-menu{
+      position: relative;
+      right: 50px;
+    }
+    .navbar-end a {
+      font-size: 0.4rem;    
+  }
+  .navbar-brand{
+    opacity: 0;
+    visibility: hidden;
+  }
+  }
+  @media only screen and (max-width: 364px) {
+    .navbar-menu{
+      position: relative;
+      right: 58px;
+    }
+    .navbar-end a {
+      font-size: 0.38rem;    
+  }
+  .navbar-brand{
+    opacity: 0;
+    visibility: hidden;
+  }
+  }

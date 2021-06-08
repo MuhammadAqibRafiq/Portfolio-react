@@ -1,38 +1,140 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap');
+
+*{ padding: 0;margin: 0;box-sizing: border-box; }
+body{font-family: 'Roboto', sans-serif;}
+
+.banner img{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  position: absolute;
+  top: 350px;
+  background-color:green;
+  z-index: 1;
+}
+.contact{
+  width: 100%;
+  height: 100px;
+  justify-content: center;
+  background-color: white;
+  display:grid;
+  /* text-align: center; */
+  padding: 200px;
+  padding-top: 100px;
+}
+.contact h3{
+  font-size: 25px;
+  color: rgb(101, 144, 223);
+}
+.contact__icon{
+ margin: 50px;
+}
+.about{
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-color: rgb(247, 247, 244);
+  padding: 100px;
+  justify-content: center;
+}
+.about h3{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.about h4{
+  color: rgb(101, 144, 223);
+  font-size: 50px;
+  padding: 20px;
+  text-align: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.skills{
+  width: 100%;
+  height: 100vh;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: white;
+  display: grid;
+  text-align: center;
+  padding: 100px;
+}
+.skills__text{
+  font-size: 15px;
+  color: rgb(101, 144, 223);
+}
+.skills__r{
+  width: 100px;
+  margin: 30px;
+}
+.project{
+  justify-content: center;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+.project img{
+  padding-top: 100px;
+  display: flex;
+  height: 90vh;
+  width: 50vw;
+}
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+.contact a:hover{
+  color: black;
 }
 
-.App-link {
-  color: #61dafb;
+
+@media only screen and (max-width: 680px) {
+  .contact {
+    width: auto;
+
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 542px) {
+  /* //project name// */
+   h3{
+    font-size: small  !important;
+    color: rgb(8, 1, 15) !important;
+    background-color: transparent !important;
   }
-  to {
-    transform: rotate(360deg);
+  .d-block{
+    width: 80vw !important ;
+    height: 60vh !important ;
+  }
+  .e-block{
+    height: 60vh !important ;
+  }
+  .contact {
+    padding-top: 200px;
+  }
+  .contact__font{
+   font-size: 15px !important;
+  } 
+  .skills__text h3{
+    font-size: 15px !important;
+  }
+  .about h4{
+    font-size: 20px !important;
+  }
+  .about h3{
+    font-size: 15px !important;
+  }
+  .d{
+    font-size: 20px !important;
+  }
+  .e{
+    font-size: 15px !important;
   }
 }
+
+
